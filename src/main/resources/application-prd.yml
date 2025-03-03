@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres.railway.internal:5432/railway/?currentSchema=santander
+    username: postgres
+    password: RFpKEFEZPzufMyoOIKFpMqdlTkNzLDhm
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        truce: false
+        web-allow-others: false
